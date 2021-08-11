@@ -1,0 +1,213 @@
+.portfolio::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0000004d;
+  z-index: 50; }
+
+.portfolio div {
+  position: absolute;
+  width: 80%;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.portfolio, .portfolio-mobail {
+  padding: 30px;
+  background-repeat: no-repeat;
+  background-color: #424242; }
+  @media (min-width: 320px) {
+    .portfolio, .portfolio-mobail {
+      display: none; } }
+  @media (min-width: 575px) {
+    .portfolio, .portfolio-mobail {
+      display: block; } }
+  .portfolio div, .portfolio-mobail div {
+    color: #fff;
+    z-index: 100; }
+    .portfolio div p, .portfolio-mobail div p {
+      text-align: justify;
+      margin-top: 40px; }
+
+.portfolio-mobail {
+  background-color: #2e2e2e; }
+  @media (min-width: 320px) {
+    .portfolio-mobail {
+      display: block; } }
+  @media (min-width: 575px) {
+    .portfolio-mobail {
+      display: none; } }
+  .portfolio-mobail div {
+    position: relative;
+    padding: 20px; }
+
+.portfolio-content {
+  padding: 0 !important;
+  background-color: #424242; }
+
+@media (min-width: 320px) {
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "block1" "block2" "block3" "block4" "block5" "block6"; } }
+
+@media (min-width: 1024px) {
+  .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "block1 block1 block2 block2" "block3 block3 block4 block4" "block5 block5 block6 block6"; } }
+
+.open-content-block {
+  opacity: 0;
+  background-color: #4242429e;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer; }
+  .open-content-block:hover {
+    opacity: 1; }
+  .open-content-block a {
+    position: relative;
+    font-size: 42px;
+    color: #fff;
+    margin: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    @media (min-width: 320px) {
+      .open-content-block a {
+        top: 35%;
+        left: 35%; } }
+    @media (min-width: 768px) {
+      .open-content-block a {
+        top: 40%;
+        left: 40%; } }
+    @media (min-width: 1024px) {
+      .open-content-block a {
+        top: 42%;
+        left: 42%; } }
+    .open-content-block a:hover {
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      text-decoration: none;
+      color: #7aefff; }
+    .open-content-block a:active {
+      text-decoration: none;
+      font-size: 46px; }
+
+.block1
+, .block2
+, .block3
+, .block4
+, .block5
+, .block6 {
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  padding-bottom: 55%; }
+  .block1:hover
+, .block2:hover
+, .block3:hover
+, .block4:hover
+, .block5:hover
+, .block6:hover {
+    overflow: hidden; }
+    .block1:hover
+.slide-left, .block2:hover
+.slide-left, .block3:hover
+.slide-left, .block4:hover
+.slide-left, .block5:hover
+.slide-left, .block6:hover .slide-left {
+      -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+    .block1:hover
+.slide-right, .block2:hover
+.slide-right, .block3:hover
+.slide-right, .block4:hover
+.slide-right, .block5:hover
+.slide-right, .block6:hover .slide-right {
+      -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+
+.block1 {
+  grid-area: block1;
+  background-image: url(https://images.wallpaperscraft.ru/image/kuhnya_starinnyy_interer_mebel_derevyannyy_70052_1366x768.jpg); }
+
+.block2 {
+  grid-area: block2;
+  background-image: url(https://images.wallpaperscraft.ru/image/naushniki_audio_zvuk_122152_1366x768.jpg); }
+
+.block3 {
+  grid-area: block3;
+  background-image: url(https://images.wallpaperscraft.ru/image/naushniki_stol_rozovyj_122963_1366x768.jpg); }
+
+.block4 {
+  grid-area: block4;
+  background-image: url(https://images.wallpaperscraft.ru/image/gitara_oborudovanie_botinki_164720_1366x768.jpg); }
+
+.block5 {
+  grid-area: block5;
+  background-image: url(https://images.wallpaperscraft.ru/image/gitara_noty_struny_muzykalnyj_instrument_111863_1366x768.jpg); }
+
+.block6 {
+  grid-area: block6;
+  background-image: url(https://images.wallpaperscraft.ru/image/kuhnya_mebel_interer_dizayn_86611_1366x768.jpg); }

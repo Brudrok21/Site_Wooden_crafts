@@ -1,0 +1,31 @@
+.Modal-window-basket {
+  position: fixed;
+  display: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000000da), to(#000000da));
+  background: -webkit-linear-gradient(#000000da, #000000da);
+  background: -o-linear-gradient(#000000da, #000000da);
+  background: linear-gradient(#000000da, #000000da);
+  z-index: 999;
+  width: 100%;
+  height: 200%;
+  top: 0;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s; }
+  .Modal-window-basket .modal-basket {
+    margin: 0;
+    color: #fff;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    .Modal-window-basket .modal-basket .close-basket {
+      color: #fff;
+      margin-bottom: 15px;
+      position: relative;
+      left: 38%; }
+      .Modal-window-basket .modal-basket .close-basket:hover {
+        color: #7aefff; }
