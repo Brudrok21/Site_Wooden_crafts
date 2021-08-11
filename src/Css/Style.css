@@ -1031,8 +1031,14 @@ button, button:focus, button:active {
 @media (min-width: 1024px) {
   .div-indent {
     padding-top: 40px;
-    padding-bottom: 40px; } }
-
+    padding-bottom: 40px; } 
+ 
+  }
+  @media (min-width: 1025px) {
+  .container-products .goods .div-product .product .p-img img{
+    height: 17rem;
+  }
+}
 .active {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -1050,4 +1056,7 @@ button, button:focus, button:active {
       width: 100%;
   }
   }
+  .product.card {
+    width: 100%;
+}
   
